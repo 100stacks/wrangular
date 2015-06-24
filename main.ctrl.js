@@ -1,6 +1,8 @@
 /*
  * Angular controller - the business logic of an Angular application
  *
+ * @desc Before we can use the contoller we need to instruct Angular where to implement it in our HTML document(s)
+ * 		 We can have multiple Controllers per template and we can be nested controllers
  */
 
  // The controller is were your business logic should be handled, essentially the controller CONTROLS
@@ -73,9 +75,13 @@
  	];
  	vm.order = vm.orders[0];
 
- });
+ 	// adding event listeners
+ 	vm.new = {};
+ 	vm.addShow = function() {
+ 		vm.shows.push(vm.new);
+ 		vm.new = {};
+ 	}
 
- /*
-  * @desc Before we can use the contoller we need to instruct Angular where to implement it in our HTML document(s)
-  * 	We can have multiple Controllers per template and we can be nested controllers
-  */
+
+
+ });
