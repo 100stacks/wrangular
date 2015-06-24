@@ -1,5 +1,5 @@
 /*
- * Angular controller
+ * Angular controller - the business logic of an Angular application
  *
  */
 
@@ -11,9 +11,15 @@
 //		- 1st parameter:  The name of our controller
 //		- 2nd parameter:  The controller logic
  angular.module('app').controller("MainController", function() {
+ 	// To avoid $scope issues, we capture the controller instance with 'vm' and manipulate it instead of global $scope
  	var vm = this;
- })
 
- /* 
+ 	vm.title = "Wrangling with Angular";
+ 	vm.searchInput = "";
+
+ });
+
+ /*
   * @desc Before we can use the contoller we need to instruct Angular where to implement it in our HTML document(s)
   * 	We can have multiple Controllers per template and we can be nested controllers
+  */
