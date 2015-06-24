@@ -25,6 +25,15 @@
 				<input type="text" class="form-control" ng-model="main.searchInput">
 			</div>
 			<p>{{main.searchInput}}</p>
+			<h3>A list of TV popular shows</h3>
+			<ul class="list-group">
+				<li class="list-group-item" ng-repeat="show in main.shows">
+					<span class="glyphicon glyphicon-star" ng-if="show.favorite"></span>
+					<span class="glyphicon glyphicon-eye-close" ng-if="!show.favorite"></span>
+					&nbsp;{{show.title}}
+					<span class="badge">{{show.year}}</span>
+				</li>
+			</ul>
 	</div>
 </body>
 </html>
