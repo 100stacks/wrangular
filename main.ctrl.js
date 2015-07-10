@@ -51,25 +51,25 @@
  	vm.orders = [
  		{
  			id: 1,
- 			title: 'Year Ascending',
+ 			title: 'Year Ascending Order',
  			key: 'year',
  			reverse: false
  		},
  		{
  			id: 2,
- 			title: 'Year Descending',
+ 			title: 'Year Descending Order',
  			key: 'year',
  			reverse: true
  		},
  		{
  			id: 3,
- 			title: 'Title Ascending',
+ 			title: 'Title Ascending Order',
  			key: 'title',
  			reverse: false
  		},
  		{
  			id: 4,
- 			title: 'Title Descending',
+ 			title: 'Title Descending Order',
  			key: 'title',
  			reverse: true
  		},
