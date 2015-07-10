@@ -17,7 +17,7 @@
  	// To avoid $scope issues, we capture the controller instance with 'vm' and manipulate it instead of global $scope
  	var vm = this;
 
- 	vm.title = "Wrangling with Angular";
+ 	vm.title = "Wrangling with AngularJS Client-Side Framework";
  	vm.searchInput = "";
  	vm.shows = [
  		{ 
